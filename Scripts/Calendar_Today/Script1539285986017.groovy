@@ -12,4 +12,23 @@ import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
+import org.openqa.selenium.Keys as Keys
+
+WebUI.openBrowser('')
+
+WebUI.navigateToUrl('https://unicorn.base7.io/login')
+
+WebUI.setText(findTestObject('Object Repository/Calendar_Today/Page_page.calendar - base7/input'), 'unicorn')
+
+WebUI.setEncryptedText(findTestObject('Object Repository/Calendar_Today/Page_page.calendar - base7/input_1'), 'j2juw/NO6dfCUZ+mEA7Zjw==')
+
+WebUI.setEncryptedText(findTestObject('Object Repository/Calendar_Today/Page_page.calendar - base7/input_2'), 'j2juw/NO6dfCUZ+mEA7Zjw==')
+
+WebUI.click(findTestObject('Object Repository/Calendar_Today/Page_page.calendar - base7/button_Sign In'))
+
+WebUI.click(findTestObject('Object Repository/Calendar_Today/Page_Calendar - base7/button_Today'))
+
+WebUI.click(findTestObject('Object Repository/Calendar_Today/Page_Calendar - base7/button_Today'))
+
+WebUI.click(findTestObject('Object Repository/Calendar_Today/Page_Calendar - base7/button_Today'))
 
